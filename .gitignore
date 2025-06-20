@@ -1,0 +1,18 @@
+# Dependency directories
+node_modules/
+
+### Windows template
+# Windows thumbnail cache files
+# Folder config file
+Thumbs.db
+desktop.ini
+
+# Log files
+*.log
+
+# Build folders
+dist/
+
+# IDE/editor folders
+.idea/
+.vscode/
