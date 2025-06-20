@@ -1,0 +1,1 @@
+This is project for C-WT-AT3-PROJ, which design and build a Portfolio site to display & showcase current & future coding.
