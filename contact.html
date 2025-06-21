@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wai Chung | Web Tech | Cert 4 Prog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="../assets/js/main.js"></script>
+    <link rel="stylesheet" href="./assets/css/site.css">
+  </head>
+  <body class="bg-gray-100 min-h-screen flex flex-col">
+    <header
+      class="bg-gray-800 text-orange-600 sticky top-0 p-4 pb-6 flex items-center justify-between z-10"
+    >
+      <div class="flex items-center gap-2">
+        <img src="./assets/img/computer-science.png" alt="Logo" class="w-16">
+        <h1 class="pl-2 text-xl font-bold">
+          Certificate IV in IT (Programming) Web Tech Portfolio
+        </h1>
+      </div>
+      <nav class="pt-2">
+        <ul class="flex gap-4">
+          <li>
+            <a
+              class="border border-t-0 border-x-0 border-gray-700 hover:border-gray-300 hover:text-white transition duration-500 ease-in-out pb-2"
+              href="."
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="border border-t-0 border-x-0 border-gray-700 hover:border-gray-300 hover:text-white transition duration-500 ease-in-out pb-2"
+              href="contact.html"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              class="border border-t-0 border-x-0 border-gray-700 hover:border-gray-300 hover:text-white transition duration-500 ease-in-out pb-2"
+              href="about.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="border border-t-0 border-x-0 border-gray-700 hover:border-gray-300 hover:text-white transition duration-500 ease-in-out pb-2"
+              href="resume.html"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              class="border border-t-0 border-x-0 border-gray-700 hover:border-gray-300 hover:text-white transition duration-500 ease-in-out pb-2"
+              href="projects.html"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              class="border border-t-0 border-x-0 border-gray-700 hover:border-gray-300 hover:text-white transition duration-500 ease-in-out pb-2"
+              href="mywork.html"
+              >Sample Projects</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex-1 p-20">
+      <article class="shadow-lg rounded-md p-6 mx-auto">
+        <header class="m-0 p-4">
+          <h2 class="text-3xl font-bold text-gray-800">
+            Contact Us
+          </h2>
+          <p class="text-gray-700">
+            Send us a message. We will return to you within 2-5 business days.
+          </p>
+        </header>
+        <section class="shadow p-2">
+
+        <form id = "contactForm" class="flex flex-col gap-2">
+
+        <div class="m-6">
+            <label class="mb-2 block" for="name">Name</label>
+            <input type="text" id="name" name="name" required class="border rounded-md w-64">
+            <p class="text-red-700 text-sm m-1 hidden" id="nameError">Name is required</p>
+        </div>
+
+        <div class="m-6">
+            <label  class="mb-2 block" for="email">Email</label>
+            <input type="email" id="email" name="email" required class="border rounded-md w-64">
+            <p class="text-red-700 text-sm m-1 hidden" id="emailError">Valid email is required</p>
+        </div>
+
+        <div class="m-6">
+            <label  class="mb-2 block" for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required class="border rounded-md w-64"></textarea>
+            <p class="text-red-700 text-sm m-1 hidden" id="messageError">Message cannot be empty</p>
+        </div>
+        <button class="m-6 border rounded-lg font-bold w-64 text-white bg-blue-600 hover:bg-blue-800 transition" type="submit">Send</button>
+
+    </form>
+</section>
+      </article>
+    </main>
+
+    <footer
+      class="mt-auto flex flex-col md:flex-row gap-16 p-8 pt-12 bg-gray-700 text-white justify-between items-center"
+    >
+      <section>
+        <img src="./assets/img/computer-science.png" alt="Logo" class="w-16">
+        <p>© Copyright 2023 Adrian Gould and Wai Chung. All rights reserved.</p>
+      </section>
+      <section>
+        <ul class="flex flex-col gap-2 text-sm">
+          <li>
+            <a class="hover:text-orange-400 transition" href="."
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-orange-400 transition" href="contact.html"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-orange-400 transition" href="about.html">
+                About
+            </a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>
