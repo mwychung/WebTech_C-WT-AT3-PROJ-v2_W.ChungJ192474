@@ -73,38 +73,62 @@
     <main class="flex-1 p-20">
       <article class="shadow-lg rounded-md p-6 mx-auto">
         <header class="m-0 p-4">
-          <h2 class="text-3xl font-bold text-gray-800">
-            Contact Us
-          </h2>
+          <h2 class="text-3xl font-bold text-gray-800">Contact Us</h2>
           <p class="text-gray-700">
             Send us a message. We will return to you within 2-5 business days.
           </p>
         </header>
         <section class="shadow p-2">
+          <form id="contactForm" class="flex flex-col gap-2">
+            <div class="m-6">
+              <label class="mb-2 block" for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="border rounded-md w-64"
+              >
+              <p class="text-red-700 text-sm m-1 hidden" id="nameError">
+                Name is required
+              </p>
+            </div>
 
-        <form id = "contactForm" class="flex flex-col gap-2">
+            <div class="m-6">
+              <label class="mb-2 block" for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="border rounded-md w-64"
+              >
+              <p class="text-red-700 text-sm m-1 hidden" id="emailError">
+                Valid email is required
+              </p>
+            </div>
 
-        <div class="m-6">
-            <label class="mb-2 block" for="name">Name</label>
-            <input type="text" id="name" name="name" required class="border rounded-md w-64">
-            <p class="text-red-700 text-sm m-1 hidden" id="nameError">Name is required</p>
-        </div>
-
-        <div class="m-6">
-            <label  class="mb-2 block" for="email">Email</label>
-            <input type="email" id="email" name="email" required class="border rounded-md w-64">
-            <p class="text-red-700 text-sm m-1 hidden" id="emailError">Valid email is required</p>
-        </div>
-
-        <div class="m-6">
-            <label  class="mb-2 block" for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required class="border rounded-md w-64"></textarea>
-            <p class="text-red-700 text-sm m-1 hidden" id="messageError">Message cannot be empty</p>
-        </div>
-        <button class="m-6 border rounded-lg font-bold w-64 text-white bg-blue-600 hover:bg-blue-800 transition" type="submit">Send</button>
-
-    </form>
-</section>
+            <div class="m-6">
+              <label class="mb-2 block" for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                class="border rounded-md w-64"
+              ></textarea>
+              <p class="text-red-700 text-sm m-1 hidden" id="messageError">
+                Message cannot be empty
+              </p>
+            </div>
+            <button
+              class="m-6 border rounded-lg font-bold w-64 text-white bg-blue-600 hover:bg-blue-800 transition"
+              type="submit"
+            >
+              Send
+            </button>
+          </form>
+        </section>
       </article>
     </main>
 
@@ -118,9 +142,7 @@
       <section>
         <ul class="flex flex-col gap-2 text-sm">
           <li>
-            <a class="hover:text-orange-400 transition" href="."
-              >Home</a
-            >
+            <a class="hover:text-orange-400 transition" href=".">Home</a>
           </li>
           <li>
             <a class="hover:text-orange-400 transition" href="contact.html"
@@ -129,7 +151,7 @@
           </li>
           <li>
             <a class="hover:text-orange-400 transition" href="about.html">
-                About
+              About
             </a>
           </li>
         </ul>
