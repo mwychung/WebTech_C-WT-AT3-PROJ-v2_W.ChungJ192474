@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    overflow-y: scroll;
+  }
+  
+  /* Mobile Layout - Header */
+  header {
+    background-color: #4b5320;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
+  
+  header .logo {
+    display: none;
+  }
+  
+  header h1 {
+    margin-right: auto;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .hamburger-menu {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+    display: block;
+    position: relative;
+  }
+  
+  .nav-menu {
+    display: none;
+  }
+  
+  .nav-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-menu ul a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Mobile Layout - Main */
+  main {
+    padding: 2rem 1rem 1rem;
+    width: 90%;
+    margin: 1rem auto 1rem;
+    box-sizing: border-box;
+    border: 0.125rem solid #8a9a5b;
+    border-radius: 10px;
+    flex-grow: 1;
+  }
+  
+  article {
+    margin-bottom: 2rem;
+  }
+  
+  article header {
+    display: block;
+    background-color: #f5f5dc;
+    color: #222021;
+    padding: 0.25rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    break-inside: avoid;
+    z-index: auto;
+  }
+  
+  article header h2 {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  
+  article header p {
+    font-size: 0.7rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+  
+  article section h3 {
+    font-size: 1rem;
+    margin: 1rem 0rem 0.25rem 0rem;
+  }
+  
+  article section p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: black;
+  }
+  
+  aside {
+    display: none;
+  }
+  
+  /* Mobile Layout - Footer */
+  footer {
+    background-color: #8a9a5b;
+    color: #222021;
+    padding: 1.5rem;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: auto;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin-top: 0.5rem;
+  }
+  
+  footer ul li {
+    display: inline;
+    margin: 0.5rem;
+  }
+  
+  footer ul a {
+    color: #4b5320;
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+  
+  /*Mobile Layout - Form */
+  form {
+    border: 0.125rem solid #4b5320;
+    text-align: center;
+    border-radius: 10px;
+    color: #4b5320;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+  
+  form label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.5rem;
+    color: #4b5320;
+    padding: 0.5rem;
+  }
+  
+  .formTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  
+  .formInputHint {
+    font-size: 0.75rem;
+    color: #4b5320;
+    margin: 0.5rem;
+  }
+  
+  form input[type="text"] {
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    border: 0.1rem solid #f5f5dc;
+    display: block;
+    width: 100%;
+  }
+  
+  form button[type="submit"] {
+    background-color: #222021;
+    font-size: 1.25rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  #apiResponse {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #f5f5dc;
+  }
+  
+  #apiResponse:empty {
+    display: none;
+  }
+  
+  /* Desktop Layout*/
+  @media screen and (min-width: 1024px) {
+    /* Desktop - Header*/
+    header {
+      padding: 0.5rem;
+      justify-content: space-between;
+      width: 100%;
+      position: sticky;
+      top: 0;
+      z-index: 9999;
+      background-color: #222021;
+      color: white;
+      display: block;
+    }
+  
+    header .header-setting {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    header .logo {
+      width: 80px;
+      height: auto;
+      display: block;
+    }
+  
+    header h1 {
+      font-size: 2.25rem;
+    }
+  
+    /* Desktop - Navigation */
+    .hamburger-menu {
+      display: none;
+    }
+  
+    .nav-menu {
+      display: block;
+    }
+  
+    .nav-menu ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 10rem;
+    }
+  
+    .nav-menu ul a {
+      padding: 0.5rem 1rem;
+      color: rgb(255, 255, 255);
+    }
+  
+    .nav-menu ul a:hover {
+      background-color: #f5f5dc;
+      color: #4b5320;
+      border-radius: 5px;
+    }
+  
+    /* Desktop - Main */
+    main {
+      padding: 1.5rem;
+      width: 90%;
+      margin: 1rem auto 1rem;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border: none;
+      align-items: flex-start;
+      gap: 2rem;
+      flex-grow: 1;
+    }
+  
+    main .article-column {
+      display: flex;
+      flex-direction: column;
+      flex: 3;
+      gap: 1rem;
+      overflow: auto;
+    }
+  
+    main .article-column article {
+      border: 0.125rem solid #222021;
+      border-radius: 5px;
+      padding: 0rem;
+      box-sizing: border-box;
+      margin-bottom: 1.5rem;
+    }
+  
+    main .article-column article header {
+      display: block;
+      background-color: #4b5320;
+      color: white;
+      padding: 1rem;
+      margin-top: 0rem;
+      margin-bottom: 0.5rem;
+      z-index: auto;
+      break-inside: avoid;
+      position: relative;
+      border-radius: 5px 5px 0px 0px;
+    }
+  
+    main .article-column article header h2 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+  
+    main .article-column article header p {
+      font-size: 0.8rem;
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+  
+    main .article-column article section h3 {
+      font-size: 1rem;
+      padding: 0.5rem;
+      margin: 1rem 0rem 0.25rem 0rem;
+    }
+  
+    main .article-column article section p {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #222021;
+      padding: 0.5rem;
+    }
+  
+    main aside {
+      background-color: white;
+      display: block;
+      flex: 1;
+      border: 0.125rem solid #4b5320;
+      border-radius: 5px;
+      padding: 0rem;
+      margin: 0rem 1rem;
+      font-style: italic;
+      position: relative;
+      overflow: auto;
+    }
+  
+    main aside header {
+      margin: 0;
+      padding: 0;
+      color: #222021;
+      background-color: #8a9a5b;
+      border-radius: 5px 5px 0px 0px;
+      z-index: auto;
+      break-inside: avoid;
+      position: relative;
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    main aside section {
+      margin: 1rem 0.25rem 2rem 0.25rem;
+      line-height: 1.5;
+    }
+  
+    main aside footer {
+      padding: 0;
+      margin-top: 0.25rem;
+      text-align: end;
+      font-size: 1rem;
+      background-color: transparent;
+      color: #222021;
+    }
+  
+    main aside img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  
+    /* Desktop - Footer */
+    footer {
+      background-color: #222021;
+      color: white;
+      padding: 1.5rem;
+      width: 100%;
+      font-size: 1.25rem;
+      text-align: center;
+      margin-top: auto;
+      font-weight: bold;
+      position: relative;
+      border-top: 1px;
+    }
+  
+    footer ul {
+      list-style: none;
+      margin-top: 0.75rem;
+    }
+  
+    footer ul li {
+      display: inline;
+      margin: 0.75rem;
+    }
+  
+    footer ul a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+  
+    footer ul a:hover {
+      background-color: #f5f5dc;
+      color: #4b5320;
+      border-radius: 5px;
+    }
+  
+    /* Desktop - Form */
+    form {
+      max-width: 700px;
+      width: 80%;
+      font-size: 2rem;
+      margin: 1rem auto;
+      padding: 1.5rem;
+    }
+  
+    form .formTitle {
+      font-size: 1.5rem !important;
+      margin: 0.5rem;
+      padding: 0.5rem;
+      text-align: center;
+    }
+  
+    .formInputHint {
+      font-size: 0.75rem !important;
+      margin: 0.5rem;
+    }
+  
+    form label {
+      font-size: 1.25rem;
+      margin: 0.5rem;
+      padding: 0.5rem;
+    }
+  
+    form input[type="text"] {
+      font-size: 1.25rem;
+    }
+  }
+  
